@@ -1143,7 +1143,7 @@ from the templates and iteratively extends and optimises the rule set.
 
 First, a corpus should be loaded. Currently, the format of Brown corpus is supported. Then a lexicon can be created from the corpus. The lexicon is needed for tagging the sentences before the learning algorithm is applied.
 ```javascript
-var natural = require(natural);
+var natural = require('natural');
 var text = fs.readFileSync(brownCorpusFile, 'utf8');
 var corpus = new natural.Corpus(text, 1);
 var lexicon = corpus.buildLexicon();
